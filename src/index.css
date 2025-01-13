@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+body {
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.start{
+  text-align: center;
+}
+
+.container{
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+/* .btn{
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background-color: aqua;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+} */
+
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn {
+background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn:before,
+.btn:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgba(251,75,2,1);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn:before{
+   height: 0%;
+   width: 2px;
+}
+.btn:after {
+  width: 0%;
+  height: 2px;
+}
+.btn:hover{
+  color: rgba(251,75,2,1);
+  background: transparent;
+}
+.btn:hover:before {
+  height: 100%;
+}
+.btn:hover:after {
+  width: 100%;
+}
+.btn span:before,
+.btn span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgba(251,75,2,1);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn span:hover:before {
+  height: 100%;
+}
+.btn span:hover:after {
+  width: 100%;
+}
+
+/* Card CSS Design */
+.main{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px 30px;
+  margin: 0 20px 0 20px;
+}
+.main-card{
+  /* border: 2px solid black; */
+  font-family: 'Lora', serif;
+  display: flex;
+  max-width: 460px;
+  height: 180px;
+  /* box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3); */
+  /* box-shadow: 5px 0 5px 2px rgb(0, 0, 0); */
+  box-shadow: 3px 15px 20px 0.1rem rgba(0, 0, 0, 0.4) ;
+  border-radius: 1rem;
+}
+img{
+  height: 180px;
+  width: 200px;
+  border-radius: 1rem 0 1rem 0;
+  margin-right: 10px;
+  
+}
+.price{
+  display: inline-block;
+  margin: 0 1.5rem 0 0;
+}
+.price-btn{
+  margin-bottom: 9px;
+}
+.order-btn{
+  margin: 0;
+  padding: 12px;
+  min-width: 100px;
+  background: #2ecc71;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: none;
+}
+.order-btn:hover{
+  background: #27ae60;
+  color: #ffffff;
+}
